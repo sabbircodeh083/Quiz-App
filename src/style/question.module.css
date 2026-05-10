@@ -1,0 +1,29 @@
+.qtitle{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.qtitle span{
+    color: #2dbf64;
+}
+.qtitle p{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.question{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+
+.lab input{
+    display: none !important;
+}

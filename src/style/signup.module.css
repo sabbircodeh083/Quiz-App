@@ -1,0 +1,15 @@
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media(max-width: 600px){
+    .column{
+        grid-template-columns: 1fr;
+    }
+}
+
+.signUpButton{
+    height: 44px;
+} 

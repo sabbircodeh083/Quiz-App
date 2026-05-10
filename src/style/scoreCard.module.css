@@ -1,0 +1,39 @@
+.scoreCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.score{
+    font-size: clamp(15px,2vw,35px);
+    padding-top: 6rem;
+    text-align: center;
+}
+
+
+@media(max-width:600px){
+    .scoreCard{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .score{
+        padding-top: unset !important;
+    }
+}
+
+
+.illustration{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.illustration img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

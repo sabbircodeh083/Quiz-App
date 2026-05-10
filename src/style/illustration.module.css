@@ -1,0 +1,14 @@
+.illustration{
+    padding: 5rem 2rem;
+
+}
+
+.illustration img {
+    max-width: 80%;
+}
+
+@media(max-width: 600px){
+    .illustration{
+        display: none;
+    }
+}

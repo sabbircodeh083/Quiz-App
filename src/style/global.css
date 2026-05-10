@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    color: black;
+    font-family:"Montserrat", sans-serif;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+
+
+body{
+    background-color:  #f2f4f8;
+}
+
+.error {
+  background-color: #ffc0c7;
+  padding: 0.6rem 1.2rem;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

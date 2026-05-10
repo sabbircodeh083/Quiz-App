@@ -1,0 +1,7 @@
+.account{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    align-items: center;
+    gap: 10px;
+}

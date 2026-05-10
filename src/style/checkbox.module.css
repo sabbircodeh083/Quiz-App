@@ -1,0 +1,30 @@
+.lab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.correct {
+  font-weight: bold;
+}
+
+
+.corrected{
+  font-weight: bold;
+}
+
+.wrong{
+    font-weight: bold;
+}
+
+.note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

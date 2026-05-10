@@ -1,0 +1,35 @@
+.nev{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background: white;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    justify-content: space-between;
+}
+.nev img{
+    width: 60px;
+}
+
+.brand ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+}
+
+.brand a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(max-width:600px){
+    .brand ul li h3{
+        display: none;
+    }
+}
