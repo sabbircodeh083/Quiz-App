@@ -1,16 +1,98 @@
-# React + Vite
+# Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite quiz application where users can sign up, log in, answer video-based questions, and view their results. The app uses Firebase Authentication and Firebase Realtime Database for user accounts and quiz data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User signup and login flow with Firebase Authentication
+- Protected routes for quiz and result pages
+- Video-based quiz browsing using dynamic routes
+- Question answering with multiple-choice options
+- Score calculation and result analysis
+- Firebase-backed quiz and answer data loading
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- React Router DOM
+- Firebase
+- CSS Modules
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+src/
+├── components/
+├── contexts/
+├── costomHook/
+├── pages/
+├── style/
+├── App.jsx
+├── main.jsx
+├── ...
+firebase.jsx
+```
+
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure environment variables
+
+Create a `.env.local` file in the project root and add your Firebase configuration:
+
+```env
+VITE_API_KEY=your_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_APP_ID=your_app_id
+VITE_MEASUREMENT_ID=your_measurement_id
+VITE_DATABASE_URL=your_database_url
+```
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+The app will start in development mode and usually be available at:
+
+```bash
+http://localhost:5173
+```
+
+## Available Scripts
+
+```bash
+npm run dev     # start the Vite dev server
+npm run build   # create a production build
+npm run preview # preview the production build
+npm run lint    # run ESLint checks
+```
+
+## Firebase Setup
+
+This app expects:
+
+- Firebase Authentication enabled for Email/Password sign-in
+- Firebase Realtime Database with quiz data stored in paths like:
+  - `quiz/<videoId>/questions`
+  - `answers/<videoId>/questions`
+  - `result/<userId>`
+
+## Notes
+
+This project is designed as a learning or demo quiz app and uses Firebase for real authentication and database content. If your database structure differs, update the data access logic in the custom hooks under `src/costomHook/`.
+
+## License
+
+This project is for educational/demo purposes.
+
