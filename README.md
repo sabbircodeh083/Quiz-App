@@ -96,3 +96,5 @@ This project is designed as a learning or demo quiz app and uses Firebase for re
 
 This project is for educational/demo purposes.
 
+##Live Link
+https://quiz-app-five-woad-63.vercel.app/
